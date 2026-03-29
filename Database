@@ -24,8 +24,8 @@ CREATE TABLE Pet (
 -- Table: Vaccine
 CREATE TABLE Vaccine (
     VaccineID INT PRIMARY KEY IDENTITY(1,1),
-    PetID INT,
-    VaccineName NVARCHAR(100),
+    PetID INT NOT NULL,
+    VaccineName NVARCHAR(100) NOT NULL,
     InjectionDate DATE,
     NextInjectionDate DATE,
     Note NVARCHAR(255),
