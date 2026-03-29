@@ -3,7 +3,7 @@
 -- Table: Owner
 CREATE TABLE Owner (
     OwnerID INT PRIMARY KEY IDENTITY(1,1),
-    OwnerName NVARCHAR(100),
+    OwnerName NVARCHAR(100) NOT NULL,
     Phone NVARCHAR(20),
     Address NVARCHAR(255)
 );
@@ -15,8 +15,8 @@ CREATE TABLE Pet (
     Species NVARCHAR(50),
     Breed NVARCHAR(50),
     Age INT CHECK (Age >= 0),
-    OwnerID INT,
-    Gender NVARCHAR(10),
+    OwnerID INT NOT NULL,
+    Gender NVARCHAR(10) CHECK (Gender IN ('Male', 'Female')),
     Note NVARCHAR(255),
     FOREIGN KEY (OwnerID) REFERENCES Owner(OwnerID)
 );
