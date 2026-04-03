@@ -18,7 +18,7 @@ CREATE TABLE Pet (
     OwnerID INT NOT NULL,
     Gender NVARCHAR(10) CHECK (Gender IN ('Male', 'Female')),
     Note NVARCHAR(255),
-    FOREIGN KEY (OwnerID) REFERENCES Owner(OwnerID)
+    CONSTRAINT FK_Pet_Owner FOREIGN KEY (OwnerID) REFERENCES Owner(OwnerID)
 );
 
 -- Table: Vaccine
