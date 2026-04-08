@@ -1,33 +1,38 @@
--- DATABASE PETMANAGEMENTDB
 
--- Table: Owner
 CREATE TABLE Owner (
     OwnerID INT PRIMARY KEY IDENTITY(1,1),
     OwnerName NVARCHAR(100) NOT NULL,
     Phone NVARCHAR(20),
-    Address NVARCHAR(255)
+    Address NVARCHAR(255),
+    Email NVARCHAR(100),
+    CreatedDate DATETIME DEFAULT GETDATE(),
+    Note NVARCHAR(255)
 );
 
--- Table: Pet
 CREATE TABLE Pet (
     PetID INT PRIMARY KEY IDENTITY(1,1),
     PetName NVARCHAR(100) NOT NULL,
     Species NVARCHAR(50),
     Breed NVARCHAR(50),
-    Age INT CHECK (Age >= 0),
+    DateOfBirth DATE,
+    Weight FLOAT,
+    HealthStatus NVARCHAR(100),
     OwnerID INT NOT NULL,
     Gender NVARCHAR(10) CHECK (Gender IN ('Male', 'Female')),
     Note NVARCHAR(255),
-    CONSTRAINT FK_Pet_Owner FOREIGN KEY (OwnerID) REFERENCES Owner(OwnerID)
+    FOREIGN KEY (OwnerID) REFERENCES Owner(OwnerID)
 );
 
--- Table: Vaccine
+
 CREATE TABLE Vaccine (
     VaccineID INT PRIMARY KEY IDENTITY(1,1),
     PetID INT NOT NULL,
     VaccineName NVARCHAR(100) NOT NULL,
     InjectionDate DATE,
     NextInjectionDate DATE,
+    DoseNumber INT,
+    Status NVARCHAR(50),
+    Reminder BIT DEFAULT 0,
     Note NVARCHAR(255),
     FOREIGN KEY (PetID) REFERENCES Pet(PetID)
 );
