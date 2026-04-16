@@ -36,3 +36,17 @@ CREATE TABLE Vaccine (
     Note NVARCHAR(255),
     FOREIGN KEY (PetID) REFERENCES Pet(PetID)
 );
+
+CREATE VIEW vw_UpcomingVaccinations AS
+SELECT
+    p.PetID,
+    p.PetName,
+    p.Species,
+    v.VaccineID,
+    v.VaccineName,
+    v.NextInjectionDate,
+    v.Status,
+    v.Reminder
+FROM Vaccine v
+INNER JOIN Pet p ON v.PetID = p.PetID
+WHERE v.NextInjectionDate IS NOT NULL;
