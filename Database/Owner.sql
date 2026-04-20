@@ -1,0 +1,9 @@
+CREATE TABLE Owner (
+    OwnerID INT PRIMARY KEY IDENTITY(1,1),
+    OwnerName NVARCHAR(100) NOT NULL,
+    Phone NVARCHAR(20),
+    Address NVARCHAR(255),
+    Email NVARCHAR(100),
+    CreatedDate DATETIME DEFAULT GETDATE(),
+    Note NVARCHAR(255)
+);
