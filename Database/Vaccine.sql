@@ -5,8 +5,9 @@ CREATE TABLE Vaccine (
     InjectionDate DATE,
     NextInjectionDate DATE,
     DoseNumber INT,
-    Status NVARCHAR(50),
+    Status NVARCHAR(50) CHECK (Status IN ('Scheduled', 'Completed', 'Missed')),
     Reminder BIT DEFAULT 0,
     Note NVARCHAR(255),
     FOREIGN KEY (PetID) REFERENCES Pet(PetID)
+        ON DELETE CASCADE
 );
