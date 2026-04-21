@@ -4,6 +4,7 @@ CREATE TABLE Owner (
     Phone NVARCHAR(20),
     Address NVARCHAR(255),
     Email NVARCHAR(100),
+    PasswordHash NVARCHAR(255) NOT NULL,
     CreatedDate DATETIME DEFAULT GETDATE(),
     Note NVARCHAR(255)
 );
