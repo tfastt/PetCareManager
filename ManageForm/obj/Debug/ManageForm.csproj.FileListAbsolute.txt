@@ -11,3 +11,16 @@ C:\Users\PHONG\source\repos\ManageForm\ManageForm\obj\Debug\ManageForm.pdb
 C:\Users\PHONG\source\repos\ManageForm\ManageForm\obj\Debug\ManageForm.PetForm.resources
 C:\Users\PHONG\source\repos\ManageForm\ManageForm\obj\Debug\ManageForm.VaccineForm.resources
 C:\Users\PHONG\source\repos\ManageForm\ManageForm\obj\Debug\ManageForm.exe.config
+C:\Users\PHONG\ManageForm\ManageForm\bin\Debug\ManageForm.exe.config
+C:\Users\PHONG\ManageForm\ManageForm\bin\Debug\ManageForm.exe
+C:\Users\PHONG\ManageForm\ManageForm\bin\Debug\ManageForm.pdb
+C:\Users\PHONG\ManageForm\ManageForm\obj\Debug\ManageForm.csproj.AssemblyReference.cache
+C:\Users\PHONG\ManageForm\ManageForm\obj\Debug\ManageForm.exe.config
+C:\Users\PHONG\ManageForm\ManageForm\obj\Debug\ManageForm.Form1.resources
+C:\Users\PHONG\ManageForm\ManageForm\obj\Debug\ManageForm.PetForm.resources
+C:\Users\PHONG\ManageForm\ManageForm\obj\Debug\ManageForm.Properties.Resources.resources
+C:\Users\PHONG\ManageForm\ManageForm\obj\Debug\ManageForm.VaccineForm.resources
+C:\Users\PHONG\ManageForm\ManageForm\obj\Debug\ManageForm.csproj.GenerateResource.cache
+C:\Users\PHONG\ManageForm\ManageForm\obj\Debug\ManageForm.csproj.CoreCompileInputs.cache
+C:\Users\PHONG\ManageForm\ManageForm\obj\Debug\ManageForm.exe
+C:\Users\PHONG\ManageForm\ManageForm\obj\Debug\ManageForm.pdb
