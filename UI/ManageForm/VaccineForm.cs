@@ -21,5 +21,10 @@ namespace ManageForm
         {
 
         }
+
+        private void VaccineForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -154,7 +154,6 @@ namespace ManageForm
 
         private void ClearInput()
         {
-            //xinchzo
             txtPetID.Clear();
             txtPetName.Clear();
             txtSpecies.Clear();
@@ -167,6 +166,39 @@ namespace ManageForm
         private void txtPetID_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void PetForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Age_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Breed_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnChooseImage_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp|All files|*.*";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                Console.WriteLine(openFileDialog.FileName);
+                petPictureBox.Image = new Bitmap(openFileDialog.FileName);
+                petPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+          
         }
     }
 }

@@ -141,6 +141,7 @@
             this.Controls.Add(this.label3);
             this.Name = "VaccineForm";
             this.Text = "VaccineForm";
+            this.Load += new System.EventHandler(this.VaccineForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
