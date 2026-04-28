@@ -1,6 +1,6 @@
 ﻿namespace ManageForm
 {
-    partial class VaccineForm
+    partial class SystemInfoForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // VaccineForm
+            // SystemInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "VaccineForm";
-            this.Text = "VaccineForm";
-            this.Load += new System.EventHandler(this.VaccineForm_Load);
+            this.Name = "SystemInfoForm";
+            this.Text = "SystemInfoForm";
+            this.Load += new System.EventHandler(this.SystemInfoForm_Load);
             this.ResumeLayout(false);
 
         }

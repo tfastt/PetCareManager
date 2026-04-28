@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace ManageForm
 {
     public partial class PetForm : Form
     {
+        private string selectedImagePath = "";
         public PetForm()
         {
             InitializeComponent();
@@ -30,7 +32,8 @@ namespace ManageForm
             dgvPets.Columns.Add("Age", "Age");
             dgvPets.Columns.Add("OwnerName", "Owner Name");
             dgvPets.Columns.Add("Note", "Note");
-
+            dgvPets.Columns.Add("ImagePath", "Image Path");
+            dgvPets.Columns["ImagePath"].Visible = false;
             // dữ liệu mẫu
             dgvPets.Rows.Add("1", "Mimi", "Cat", "British Shorthair", "2", "Thuận", "Healthy");
             dgvPets.Rows.Add("2", "Lucky", "Dog", "Poodle", "3", "An", "Needs grooming");
@@ -61,7 +64,8 @@ namespace ManageForm
                 txtBreed.Text.Trim(),
                 txtAge.Text.Trim(),
                 txtOwnerName.Text.Trim(),
-                txtNote.Text.Trim()
+                txtNote.Text.Trim(),
+                selectedImagePath
             );
 
             MessageBox.Show("Đã thêm thành công!");
@@ -85,6 +89,7 @@ namespace ManageForm
             dgvPets.Rows[i].Cells["Age"].Value = txtAge.Text.Trim();
             dgvPets.Rows[i].Cells["OwnerName"].Value = txtOwnerName.Text.Trim();
             dgvPets.Rows[i].Cells["Note"].Value = txtNote.Text.Trim();
+            dgvPets.Rows[i].Cells["ImagePath"].Value = selectedImagePath;
 
             MessageBox.Show("Đã sửa thành công!");
             ClearInput();
@@ -149,6 +154,18 @@ namespace ManageForm
                 txtAge.Text = row.Cells["Age"].Value?.ToString();
                 txtOwnerName.Text = row.Cells["OwnerName"].Value?.ToString();
                 txtNote.Text = row.Cells["Note"].Value?.ToString();
+
+                selectedImagePath = row.Cells["ImagePath"].Value?.ToString();
+
+                if (!string.IsNullOrEmpty(selectedImagePath) && File.Exists(selectedImagePath))
+                {
+                    petPictureBox.Image = Image.FromFile(selectedImagePath);
+                    petPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+                }
+                else
+                {
+                    petPictureBox.Image = null;
+                }
             }
         }
 
@@ -161,6 +178,8 @@ namespace ManageForm
             txtAge.Clear();
             txtOwnerName.Clear();
             txtNote.Clear();
+            selectedImagePath = "";
+            petPictureBox.Image = null;
         }
 
         private void txtPetID_TextChanged(object sender, EventArgs e)
@@ -191,6 +210,7 @@ namespace ManageForm
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 Console.WriteLine(openFileDialog.FileName);
+                selectedImagePath = openFileDialog.FileName;
                 petPictureBox.Image = new Bitmap(openFileDialog.FileName);
                 petPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             }

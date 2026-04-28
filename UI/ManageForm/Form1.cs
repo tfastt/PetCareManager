@@ -12,9 +12,11 @@ namespace ManageForm
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        private string _role;
+        public Form1(string role = "owner")
         {
             InitializeComponent();
+            _role = role;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -27,6 +29,10 @@ namespace ManageForm
         {
             PetForm petForm = new PetForm();
             petForm.Show();
+        }
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
