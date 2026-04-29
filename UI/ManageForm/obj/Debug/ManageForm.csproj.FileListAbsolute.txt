@@ -32,7 +32,6 @@ C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.exe.config
 C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.Form1.resources
 C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.PetForm.resources
 C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.Properties.Resources.resources
-C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.VaccineForm.resources
 C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.csproj.GenerateResource.cache
 C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.csproj.CoreCompileInputs.cache
 C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.exe
@@ -40,3 +39,5 @@ C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.pdb
 C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.LoginForm.resources
 C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.RegisterForm.resources
 C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.SystemInfoForm.resources
+C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.VaccineFrom.resources
+C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.VaccineForm.resources

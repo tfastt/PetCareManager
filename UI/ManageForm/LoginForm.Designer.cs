@@ -128,6 +128,7 @@
             this.lnkSysInfo.TabIndex = 8;
             this.lnkSysInfo.TabStop = true;
             this.lnkSysInfo.Text = "Xem trước thông tin hệ thống";
+            this.lnkSysInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkSysInfo_LinkClicked);
             // 
             // label5
             // 
@@ -156,6 +157,7 @@
             this.Controls.Add(this.label1);
             this.Name = "LoginForm";
             this.Text = "LoginForm";
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

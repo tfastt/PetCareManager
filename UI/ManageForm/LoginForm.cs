@@ -59,6 +59,7 @@ namespace ManageForm
         {
             SystemInfoForm sysInfoForm = new SystemInfoForm();
             sysInfoForm.Show();
+            this.Hide();
         }
 
         private void btnRegister_Click_1(object sender, EventArgs e)
@@ -66,6 +67,11 @@ namespace ManageForm
             RegisterForm registerForm = new RegisterForm();
             registerForm.Show();
             this.Hide();
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
