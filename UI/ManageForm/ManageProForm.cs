@@ -287,5 +287,10 @@ namespace ManageForm
             dtpInjectionDate.Value = DateTime.Now;
             dtpNextInjectionDate.Value = DateTime.Now;
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

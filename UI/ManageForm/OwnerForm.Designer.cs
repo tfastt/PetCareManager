@@ -30,8 +30,8 @@
         {
             this.lblTitle = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnSysInfo = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.btnSysInfo = new System.Windows.Forms.Button();
             this.pnlPets = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -55,15 +55,6 @@
             this.panel1.Size = new System.Drawing.Size(775, 50);
             this.panel1.TabIndex = 1;
             // 
-            // btnSysInfo
-            // 
-            this.btnSysInfo.Location = new System.Drawing.Point(403, 9);
-            this.btnSysInfo.Name = "btnSysInfo";
-            this.btnSysInfo.Size = new System.Drawing.Size(130, 33);
-            this.btnSysInfo.TabIndex = 1;
-            this.btnSysInfo.Text = "Xem System Info";
-            this.btnSysInfo.UseVisualStyleBackColor = true;
-            // 
             // btnLogout
             // 
             this.btnLogout.Location = new System.Drawing.Point(642, 9);
@@ -72,6 +63,16 @@
             this.btnLogout.TabIndex = 2;
             this.btnLogout.Text = "Đăng xuất";
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // btnSysInfo
+            // 
+            this.btnSysInfo.Location = new System.Drawing.Point(403, 9);
+            this.btnSysInfo.Name = "btnSysInfo";
+            this.btnSysInfo.Size = new System.Drawing.Size(130, 33);
+            this.btnSysInfo.TabIndex = 1;
+            this.btnSysInfo.Text = "Xem System Info";
+            this.btnSysInfo.UseVisualStyleBackColor = true;
             // 
             // pnlPets
             // 

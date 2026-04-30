@@ -16,8 +16,8 @@ namespace ManageForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new LoginForm());
-            Application.Run(new OwnerForm());
+            Application.Run(new LoginForm());
+            //Application.Run(new OwnerForm());
 
         }
     }

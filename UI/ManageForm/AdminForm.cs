@@ -180,5 +180,30 @@ namespace ManageForm
             txtOwnerEmail.Clear();
             txtOwnerPhone.Clear();
         }
+
+        private void btnLogout_Click_1(object sender, EventArgs e)
+        {
+            DialogResult confirm = MessageBox.Show(
+        "Bạn có chắc muốn đăng xuất?", "Xác nhận",
+        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (confirm == DialogResult.Yes)
+            {
+                LoginForm loginForm = new LoginForm();
+                loginForm.Show();
+                this.Close();
+            }
+        }
+
+        private void txtOwnerID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnManagePro_Click_1(object sender, EventArgs e)
+        {
+            ManageProForm manageProForm = new ManageProForm();
+            manageProForm.Show();
+        }
     }
 }

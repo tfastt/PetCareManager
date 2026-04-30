@@ -19,7 +19,28 @@ namespace ManageForm
             InitializeComponent();
             LoadPetGrid();
         }
+        private string _petID;
+        private string _petName;
 
+        // Constructor nhận petID từ OwnerForm
+        public PetForm(string petID, string petName)
+        {
+            InitializeComponent();
+            _petID = petID;
+            _petName = petName;
+        }
+
+
+        private void PetForm_Load(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(_petID))
+            {
+                this.Text = $"Pet — {_petName}";
+                txtPetID.Text = _petID;
+                txtPetName.Text = _petName;
+            }
+            LoadPetGrid();
+        }
         private void LoadPetGrid()
         {
             dgvPets.Columns.Clear();
@@ -187,11 +208,6 @@ namespace ManageForm
 
         }
 
-        private void PetForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void Age_Click(object sender, EventArgs e)
         {
 
@@ -219,6 +235,21 @@ namespace ManageForm
         private void pictureBox1_Click(object sender, EventArgs e)
         {
           
+        }
+
+        private void btnEditVaccine_Click(object sender, EventArgs e)
+        {
+            if (dgvPets.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn pet trước!", "Thông báo");
+                return;
+            }
+
+            string petID = dgvPets.SelectedRows[0].Cells["PetID"].Value.ToString();
+            string petName = dgvPets.SelectedRows[0].Cells["PetName"].Value.ToString();
+
+            VaccineForm vaccineForm = new VaccineForm(petID, petName);
+            vaccineForm.Show();
         }
     }
 }

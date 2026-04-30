@@ -66,7 +66,7 @@
             // 
             this.lblAdminName.AutoSize = true;
             this.lblAdminName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdminName.Location = new System.Drawing.Point(563, 21);
+            this.lblAdminName.Location = new System.Drawing.Point(540, 21);
             this.lblAdminName.Name = "lblAdminName";
             this.lblAdminName.Size = new System.Drawing.Size(68, 25);
             this.lblAdminName.TabIndex = 1;
@@ -103,6 +103,7 @@
             this.btnManagePro.TabIndex = 12;
             this.btnManagePro.Text = "Manage Pro";
             this.btnManagePro.UseVisualStyleBackColor = true;
+            this.btnManagePro.Click += new System.EventHandler(this.btnManagePro_Click_1);
             // 
             // btnSearch
             // 
@@ -197,6 +198,7 @@
             this.txtOwnerID.Name = "txtOwnerID";
             this.txtOwnerID.Size = new System.Drawing.Size(160, 27);
             this.txtOwnerID.TabIndex = 1;
+            this.txtOwnerID.TextChanged += new System.EventHandler(this.txtOwnerID_TextChanged);
             // 
             // label3
             // 
@@ -221,12 +223,13 @@
             // btnLogout
             // 
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.Location = new System.Drawing.Point(637, 15);
+            this.btnLogout.Location = new System.Drawing.Point(614, 16);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(117, 35);
+            this.btnLogout.Size = new System.Drawing.Size(155, 35);
             this.btnLogout.TabIndex = 2;
             this.btnLogout.Text = "Đăng xuất";
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click_1);
             // 
             // dgvOwners
             // 

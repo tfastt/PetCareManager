@@ -91,7 +91,10 @@ namespace ManageForm
                 {
                     string tag = btnEdit.Tag.ToString();
                     string[] parts = tag.Split('|');
-                    PetForm petForm = new PetForm();
+                    string pID = parts[0];
+                    string pName = parts[1];
+
+                    PetForm petForm = new PetForm(pID, pName);
                     petForm.Show();
                 };
 
@@ -139,6 +142,20 @@ namespace ManageForm
             DialogResult confirm = MessageBox.Show(
                 "Bạn có chắc muốn đăng xuất?", "Xác nhận",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (confirm == DialogResult.Yes)
+            {
+                LoginForm loginForm = new LoginForm();
+                loginForm.Show();
+                this.Close();
+            }
+        }
+
+        private void btnLogout_Click_1(object sender, EventArgs e)
+        {
+            DialogResult confirm = MessageBox.Show(
+        "Bạn có chắc muốn đăng xuất?", "Xác nhận",
+        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (confirm == DialogResult.Yes)
             {

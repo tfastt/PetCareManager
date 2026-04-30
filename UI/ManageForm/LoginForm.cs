@@ -28,19 +28,18 @@ namespace ManageForm
                 return;
             }
 
-            // Tạm thời dùng tài khoản cứng, sau kết nối DB sẽ thay
+            // Tài khoản Admin
             if (email == "admin@petcare.vn" && password == "admin123")
             {
-                // Đăng nhập với role Admin
-                Form1 mainForm = new Form1("admin");
-                mainForm.Show();
+                AdminForm adminForm = new AdminForm("Admin");
+                adminForm.Show();
                 this.Hide();
             }
+            // Tài khoản Owner
             else if (email == "owner@petcare.vn" && password == "owner123")
             {
-                // Đăng nhập với role Owner
-                Form1 mainForm = new Form1("owner");
-                mainForm.Show();
+                OwnerForm ownerForm = new OwnerForm("Nguyễn Thuận", "owner");
+                ownerForm.Show();
                 this.Hide();
             }
             else

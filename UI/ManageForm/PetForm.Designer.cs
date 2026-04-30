@@ -48,7 +48,7 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.dgvPets = new System.Windows.Forms.DataGridView();
             this.btnChooseImage = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnEditVaccine = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.petPictureBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPets)).BeginInit();
@@ -251,14 +251,15 @@
             this.btnChooseImage.UseVisualStyleBackColor = true;
             this.btnChooseImage.Click += new System.EventHandler(this.btnChooseImage_Click);
             // 
-            // button1
+            // btnEditVaccine
             // 
-            this.button1.Location = new System.Drawing.Point(41, 235);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(144, 31);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Edit Vaccine";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnEditVaccine.Location = new System.Drawing.Point(41, 235);
+            this.btnEditVaccine.Name = "btnEditVaccine";
+            this.btnEditVaccine.Size = new System.Drawing.Size(144, 31);
+            this.btnEditVaccine.TabIndex = 22;
+            this.btnEditVaccine.Text = "Edit Vaccine";
+            this.btnEditVaccine.UseVisualStyleBackColor = true;
+            this.btnEditVaccine.Click += new System.EventHandler(this.btnEditVaccine_Click);
             // 
             // openFileDialog1
             // 
@@ -280,7 +281,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 471);
             this.Controls.Add(this.petPictureBox);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnEditVaccine);
             this.Controls.Add(this.btnChooseImage);
             this.Controls.Add(this.dgvPets);
             this.Controls.Add(this.btnSearch);
@@ -333,7 +334,7 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.DataGridView dgvPets;
         private System.Windows.Forms.Button btnChooseImage;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEditVaccine;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.PictureBox petPictureBox;
     }
