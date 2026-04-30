@@ -31,20 +31,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblAdminName = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtOwnerID = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtOwnerName = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtOwnerEmail = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtOwnerPhone = new System.Windows.Forms.TextBox();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.btnManagePro = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.txtOwnerPhone = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtOwnerEmail = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtOwnerName = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtOwnerID = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
             this.dgvOwners = new System.Windows.Forms.DataGridView();
@@ -96,65 +95,57 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin Owner";
             // 
-            // label2
+            // btnManagePro
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "label2";
+            this.btnManagePro.Location = new System.Drawing.Point(426, 85);
+            this.btnManagePro.Name = "btnManagePro";
+            this.btnManagePro.Size = new System.Drawing.Size(126, 44);
+            this.btnManagePro.TabIndex = 12;
+            this.btnManagePro.Text = "Manage Pro";
+            this.btnManagePro.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // btnSearch
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(7, 27);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 22);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Owner ID";
+            this.btnSearch.Location = new System.Drawing.Point(321, 85);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(99, 44);
+            this.btnSearch.TabIndex = 11;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
             // 
-            // txtOwnerID
+            // btnDelete
             // 
-            this.txtOwnerID.Location = new System.Drawing.Point(11, 52);
-            this.txtOwnerID.Name = "txtOwnerID";
-            this.txtOwnerID.Size = new System.Drawing.Size(160, 27);
-            this.txtOwnerID.TabIndex = 1;
+            this.btnDelete.Location = new System.Drawing.Point(216, 85);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(99, 44);
+            this.btnDelete.TabIndex = 10;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // btnUpdate
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(197, 27);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 22);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Họ tên";
+            this.btnUpdate.Location = new System.Drawing.Point(111, 85);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(99, 44);
+            this.btnUpdate.TabIndex = 9;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // txtOwnerName
+            // btnAdd
             // 
-            this.txtOwnerName.Location = new System.Drawing.Point(201, 52);
-            this.txtOwnerName.Name = "txtOwnerName";
-            this.txtOwnerName.Size = new System.Drawing.Size(160, 27);
-            this.txtOwnerName.TabIndex = 3;
+            this.btnAdd.Location = new System.Drawing.Point(6, 85);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(99, 44);
+            this.btnAdd.TabIndex = 8;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // txtOwnerPhone
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(393, 27);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 22);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Email";
-            // 
-            // txtOwnerEmail
-            // 
-            this.txtOwnerEmail.Location = new System.Drawing.Point(397, 52);
-            this.txtOwnerEmail.Name = "txtOwnerEmail";
-            this.txtOwnerEmail.Size = new System.Drawing.Size(160, 27);
-            this.txtOwnerEmail.TabIndex = 5;
+            this.txtOwnerPhone.Location = new System.Drawing.Point(605, 52);
+            this.txtOwnerPhone.Name = "txtOwnerPhone";
+            this.txtOwnerPhone.Size = new System.Drawing.Size(160, 27);
+            this.txtOwnerPhone.TabIndex = 7;
             // 
             // label6
             // 
@@ -166,57 +157,56 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Số điện thoại";
             // 
-            // txtOwnerPhone
+            // txtOwnerEmail
             // 
-            this.txtOwnerPhone.Location = new System.Drawing.Point(605, 52);
-            this.txtOwnerPhone.Name = "txtOwnerPhone";
-            this.txtOwnerPhone.Size = new System.Drawing.Size(160, 27);
-            this.txtOwnerPhone.TabIndex = 7;
+            this.txtOwnerEmail.Location = new System.Drawing.Point(397, 52);
+            this.txtOwnerEmail.Name = "txtOwnerEmail";
+            this.txtOwnerEmail.Size = new System.Drawing.Size(160, 27);
+            this.txtOwnerEmail.TabIndex = 5;
             // 
-            // btnAdd
+            // label5
             // 
-            this.btnAdd.Location = new System.Drawing.Point(6, 85);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(99, 44);
-            this.btnAdd.TabIndex = 8;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(393, 27);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(54, 22);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Email";
             // 
-            // btnUpdate
+            // txtOwnerName
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(111, 85);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(99, 44);
-            this.btnUpdate.TabIndex = 9;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.txtOwnerName.Location = new System.Drawing.Point(201, 52);
+            this.txtOwnerName.Name = "txtOwnerName";
+            this.txtOwnerName.Size = new System.Drawing.Size(160, 27);
+            this.txtOwnerName.TabIndex = 3;
             // 
-            // btnDelete
+            // label4
             // 
-            this.btnDelete.Location = new System.Drawing.Point(216, 85);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(99, 44);
-            this.btnDelete.TabIndex = 10;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(197, 27);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 22);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Họ tên";
             // 
-            // btnSearch
+            // txtOwnerID
             // 
-            this.btnSearch.Location = new System.Drawing.Point(321, 85);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(99, 44);
-            this.btnSearch.TabIndex = 11;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.txtOwnerID.Location = new System.Drawing.Point(11, 52);
+            this.txtOwnerID.Name = "txtOwnerID";
+            this.txtOwnerID.Size = new System.Drawing.Size(160, 27);
+            this.txtOwnerID.TabIndex = 1;
             // 
-            // btnManagePro
+            // label3
             // 
-            this.btnManagePro.Location = new System.Drawing.Point(426, 85);
-            this.btnManagePro.Name = "btnManagePro";
-            this.btnManagePro.Size = new System.Drawing.Size(126, 44);
-            this.btnManagePro.TabIndex = 12;
-            this.btnManagePro.Text = "Manage Pro";
-            this.btnManagePro.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(7, 27);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(85, 22);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Owner ID";
             // 
             // panel1
             // 
@@ -254,7 +244,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dgvOwners);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Name = "AdminForm";
@@ -266,7 +255,6 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOwners)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -278,7 +266,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtOwnerID;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;

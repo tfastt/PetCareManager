@@ -3,19 +3,39 @@
   "WorkspaceRootPath": "C:\\Users\\PHONG\\ManageForm\\UI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A3E8E332-6524-4D47-A699-AFA27AC83DB7}|ManageForm\\ManageForm.csproj|c:\\users\\phong\\manageform\\ui\\manageform\\manageproform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A3E8E332-6524-4D47-A699-AFA27AC83DB7}|ManageForm\\ManageForm.csproj|solutionrelative:manageform\\manageproform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E8E332-6524-4D47-A699-AFA27AC83DB7}|ManageForm\\ManageForm.csproj|c:\\users\\phong\\manageform\\ui\\manageform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E8E332-6524-4D47-A699-AFA27AC83DB7}|ManageForm\\ManageForm.csproj|solutionrelative:manageform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E8E332-6524-4D47-A699-AFA27AC83DB7}|ManageForm\\ManageForm.csproj|c:\\users\\phong\\manageform\\ui\\manageform\\manageproform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E8E332-6524-4D47-A699-AFA27AC83DB7}|ManageForm\\ManageForm.csproj|solutionrelative:manageform\\manageproform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E8E332-6524-4D47-A699-AFA27AC83DB7}|ManageForm\\ManageForm.csproj|c:\\users\\phong\\manageform\\ui\\manageform\\ownerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E8E332-6524-4D47-A699-AFA27AC83DB7}|ManageForm\\ManageForm.csproj|solutionrelative:manageform\\ownerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A3E8E332-6524-4D47-A699-AFA27AC83DB7}|ManageForm\\ManageForm.csproj|c:\\users\\phong\\manageform\\ui\\manageform\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A3E8E332-6524-4D47-A699-AFA27AC83DB7}|ManageForm\\ManageForm.csproj|solutionrelative:manageform\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3E8E332-6524-4D47-A699-AFA27AC83DB7}|ManageForm\\ManageForm.csproj|c:\\users\\phong\\manageform\\ui\\manageform\\systeminfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A3E8E332-6524-4D47-A699-AFA27AC83DB7}|ManageForm\\ManageForm.csproj|c:\\users\\phong\\manageform\\ui\\manageform\\ownerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A3E8E332-6524-4D47-A699-AFA27AC83DB7}|ManageForm\\ManageForm.csproj|solutionrelative:manageform\\ownerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E8E332-6524-4D47-A699-AFA27AC83DB7}|ManageForm\\ManageForm.csproj|C:\\Users\\PHONG\\ManageForm\\UI\\manageform\\systeminfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A3E8E332-6524-4D47-A699-AFA27AC83DB7}|ManageForm\\ManageForm.csproj|solutionrelative:manageform\\systeminfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3E8E332-6524-4D47-A699-AFA27AC83DB7}|ManageForm\\ManageForm.csproj|c:\\users\\phong\\manageform\\ui\\manageform\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A3E8E332-6524-4D47-A699-AFA27AC83DB7}|ManageForm\\ManageForm.csproj|C:\\Users\\PHONG\\ManageForm\\UI\\manageform\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3E8E332-6524-4D47-A699-AFA27AC83DB7}|ManageForm\\ManageForm.csproj|solutionrelative:manageform\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3E8E332-6524-4D47-A699-AFA27AC83DB7}|ManageForm\\ManageForm.csproj|c:\\users\\phong\\manageform\\ui\\manageform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A3E8E332-6524-4D47-A699-AFA27AC83DB7}|ManageForm\\ManageForm.csproj|C:\\Users\\PHONG\\ManageForm\\UI\\manageform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A3E8E332-6524-4D47-A699-AFA27AC83DB7}|ManageForm\\ManageForm.csproj|solutionrelative:manageform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -26,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,6 +63,81 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ManageProForm.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\ManageForm\\UI\\ManageForm\\ManageProForm.cs",
+              "RelativeDocumentMoniker": "ManageForm\\ManageProForm.cs",
+              "ToolTip": "C:\\Users\\PHONG\\ManageForm\\UI\\ManageForm\\ManageProForm.cs",
+              "RelativeToolTip": "ManageForm\\ManageProForm.cs",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAswCIBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T22:23:41.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManageProForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PHONG\\ManageForm\\UI\\ManageForm\\ManageProForm.cs",
+              "RelativeDocumentMoniker": "ManageForm\\ManageProForm.cs",
+              "ToolTip": "C:\\Users\\PHONG\\ManageForm\\UI\\ManageForm\\ManageProForm.cs [Design]",
+              "RelativeToolTip": "ManageForm\\ManageProForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T21:18:40.471Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\ManageForm\\UI\\ManageForm\\Program.cs",
+              "RelativeDocumentMoniker": "ManageForm\\Program.cs",
+              "ToolTip": "C:\\Users\\PHONG\\ManageForm\\UI\\ManageForm\\Program.cs",
+              "RelativeToolTip": "ManageForm\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T19:26:10.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OwnerForm.cs",
+              "DocumentMoniker": "C:\\Users\\PHONG\\ManageForm\\UI\\ManageForm\\OwnerForm.cs",
+              "RelativeDocumentMoniker": "ManageForm\\OwnerForm.cs",
+              "ToolTip": "C:\\Users\\PHONG\\ManageForm\\UI\\ManageForm\\OwnerForm.cs",
+              "RelativeToolTip": "ManageForm\\OwnerForm.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAgwCQAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T19:25:53.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OwnerForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PHONG\\ManageForm\\UI\\ManageForm\\OwnerForm.cs",
+              "RelativeDocumentMoniker": "ManageForm\\OwnerForm.cs",
+              "ToolTip": "C:\\Users\\PHONG\\ManageForm\\UI\\ManageForm\\OwnerForm.cs [Design]",
+              "RelativeToolTip": "ManageForm\\OwnerForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T19:20:44.167Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PHONG\\ManageForm\\UI\\ManageForm\\AdminForm.cs",
+              "RelativeDocumentMoniker": "ManageForm\\AdminForm.cs",
+              "ToolTip": "C:\\Users\\PHONG\\ManageForm\\UI\\ManageForm\\AdminForm.cs [Design]",
+              "RelativeToolTip": "ManageForm\\AdminForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T18:19:24.459Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "AdminForm.cs",
               "DocumentMoniker": "C:\\Users\\PHONG\\ManageForm\\UI\\ManageForm\\AdminForm.cs",
               "RelativeDocumentMoniker": "ManageForm\\AdminForm.cs",
@@ -55,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "SystemInfoForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PHONG\\ManageForm\\UI\\ManageForm\\SystemInfoForm.cs",
               "RelativeDocumentMoniker": "ManageForm\\SystemInfoForm.cs",
@@ -67,27 +162,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdminForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\PHONG\\ManageForm\\UI\\ManageForm\\AdminForm.cs",
-              "RelativeDocumentMoniker": "ManageForm\\AdminForm.cs",
-              "ToolTip": "C:\\Users\\PHONG\\ManageForm\\UI\\ManageForm\\AdminForm.cs [Design]",
-              "RelativeToolTip": "ManageForm\\AdminForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-29T18:19:24.459Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PHONG\\ManageForm\\UI\\ManageForm\\LoginForm.cs",
               "RelativeDocumentMoniker": "ManageForm\\LoginForm.cs",
               "ToolTip": "C:\\Users\\PHONG\\ManageForm\\UI\\ManageForm\\LoginForm.cs [Design]",
               "RelativeToolTip": "ManageForm\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-29T10:59:10.25Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-04-29T10:59:10.25Z"
             }
           ]
         }

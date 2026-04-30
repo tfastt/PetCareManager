@@ -70,6 +70,12 @@
     <Compile Include="ManageProForm.Designer.cs">
       <DependentUpon>ManageProForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="OwnerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerForm.Designer.cs">
+      <DependentUpon>OwnerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PetForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageProForm.resx">
+      <DependentUpon>ManageProForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerForm.resx">
+      <DependentUpon>OwnerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PetForm.resx">
       <DependentUpon>PetForm.cs</DependentUpon>

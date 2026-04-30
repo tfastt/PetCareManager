@@ -39,5 +39,6 @@ C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.pdb
 C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.LoginForm.resources
 C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.RegisterForm.resources
 C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.SystemInfoForm.resources
-C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.VaccineFrom.resources
 C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.VaccineForm.resources
+C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.AdminForm.resources
+C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.OwnerForm.resources
