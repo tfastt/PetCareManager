@@ -1,4 +1,4 @@
-namespace PetCareManager.Models
+namespace PetCareManager.Model
 {
     public class Vaccine
     {
