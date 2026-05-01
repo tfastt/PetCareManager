@@ -145,8 +145,6 @@ namespace ManageForm
 
             if (confirm == DialogResult.Yes)
             {
-                LoginForm loginForm = new LoginForm();
-                loginForm.Show();
                 this.Close();
             }
         }

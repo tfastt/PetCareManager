@@ -49,22 +49,29 @@ namespace ManageForm
             }
 
             MessageBox.Show("Đăng ký thành công! Vui lòng đăng nhập.", "Thành công");
-
-            LoginForm loginForm = new LoginForm();
-            loginForm.Show();
-            this.Close();
+            GoToLogin();
         }
 
         private void lnkLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            LoginForm loginForm = new LoginForm();
-            loginForm.Show();
-            this.Close();
+            GoToLogin();
         }
 
         private void RegisterForm_Load(object sender, EventArgs e)
         {
 
+        }
+        private void GoToLogin()
+        {
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f is LoginForm)
+                {
+                    f.Show();
+                    break;
+                }
+            }
+            this.Close();
         }
     }
 }

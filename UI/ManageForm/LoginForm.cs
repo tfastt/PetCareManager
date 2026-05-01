@@ -32,6 +32,7 @@ namespace ManageForm
             if (email == "admin@petcare.vn" && password == "admin123")
             {
                 AdminForm adminForm = new AdminForm("Admin");
+                adminForm.FormClosed += (s, ev) => this.Show();
                 adminForm.Show();
                 this.Hide();
             }
@@ -39,6 +40,7 @@ namespace ManageForm
             else if (email == "owner@petcare.vn" && password == "owner123")
             {
                 OwnerForm ownerForm = new OwnerForm("Nguyễn Thuận", "owner");
+                ownerForm.FormClosed += (s, ev) => this.Show();
                 ownerForm.Show();
                 this.Hide();
             }
@@ -64,6 +66,7 @@ namespace ManageForm
         private void btnRegister_Click_1(object sender, EventArgs e)
         {
             RegisterForm registerForm = new RegisterForm();
+            registerForm.FormClosed += (s, ev) => this.Show();
             registerForm.Show();
             this.Hide();
         }
@@ -71,6 +74,10 @@ namespace ManageForm
         private void LoginForm_Load(object sender, EventArgs e)
         {
 
+        }
+        private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
