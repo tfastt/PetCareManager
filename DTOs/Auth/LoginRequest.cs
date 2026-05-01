@@ -1,4 +1,4 @@
-namespace PetManagementAPI.DTOs
+namespace PetCareManager.DTOs
 {
     public class LoginRequest
     {
