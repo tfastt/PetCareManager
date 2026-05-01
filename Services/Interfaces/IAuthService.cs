@@ -1,11 +1,10 @@
-using PetCareManager.Model;
-using PetCareManager.DTOs;
+using PetCareManager.Models;
 
 namespace PetCareManager.Services.Interfaces
 {
     public interface IAuthService
     {
         User Login(string username, string password);
-        User Register(User user);
+        User Register(string username, string password);
     }
 }
