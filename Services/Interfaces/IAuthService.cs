@@ -1,4 +1,4 @@
-using PetCareManager.Models;
+using PetCareManager.Model;
 using PetCareManager.DTOs;
 
 namespace PetCareManager.Services.Interfaces
