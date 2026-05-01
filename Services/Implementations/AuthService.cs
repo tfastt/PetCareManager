@@ -1,4 +1,4 @@
-using PetCareManager.Model;
+using PetCareManager.Models;
 using PetCareManager.Services.Interfaces;
 
 namespace PetCareManager.Services.Implementations
@@ -11,19 +11,28 @@ namespace PetCareManager.Services.Implementations
         {
             var user = _users.FirstOrDefault(u => u.UserName == username);
 
-            if (user == null || user.PasswordHash != password)
-                throw new Exception("Invalid username or password");
+            if (user == null)
+                throw new Exception("User not found");
+
+            if (user.PasswordHash != password)
+                throw new Exception("Wrong password");
 
             return user;
         }
 
-        public User Register(User user)
+        public User Register(string username, string password)
         {
-            if (_users.Any(u => u.UserName == user.UserName))
+            if (_users.Any(u => u.UserName == username))
                 throw new Exception("User already exists");
 
-            user.UserID = _users.Count + 1;
-            user.Role = "Owner";
+            var user = new User
+            {
+                UserID = _users.Count + 1,
+                UserName = username,
+                PasswordHash = password,
+                Role = "Owner",
+                CreatedDate = DateTime.Now
+            };
 
             _users.Add(user);
             return user;
