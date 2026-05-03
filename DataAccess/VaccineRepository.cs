@@ -5,7 +5,7 @@ using PetCareManager.Model;
 
 namespace PetCareManager.DataAccess
 {
-    public class VaccineService
+    public class VaccineRepository
     {
         private string connectionString =
             "Server=localhost\\SQLEXPRESS;Database=PetCareManagement;Trusted_Connection=True;";
