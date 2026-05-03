@@ -1,0 +1,17 @@
+D:\Study\HK2 25-26\He_QTCSDL\Project\PetCareManager\UI\ManageForm\obj\Debug\ManageForm.csproj.AssemblyReference.cache
+D:\Study\HK2 25-26\He_QTCSDL\Project\PetCareManager\UI\ManageForm\obj\Debug\ManageForm.AdminForm.resources
+D:\Study\HK2 25-26\He_QTCSDL\Project\PetCareManager\UI\ManageForm\obj\Debug\ManageForm.LoginForm.resources
+D:\Study\HK2 25-26\He_QTCSDL\Project\PetCareManager\UI\ManageForm\obj\Debug\ManageForm.ManageProForm.resources
+D:\Study\HK2 25-26\He_QTCSDL\Project\PetCareManager\UI\ManageForm\obj\Debug\ManageForm.OwnerForm.resources
+D:\Study\HK2 25-26\He_QTCSDL\Project\PetCareManager\UI\ManageForm\obj\Debug\ManageForm.PetForm.resources
+D:\Study\HK2 25-26\He_QTCSDL\Project\PetCareManager\UI\ManageForm\obj\Debug\ManageForm.Properties.Resources.resources
+D:\Study\HK2 25-26\He_QTCSDL\Project\PetCareManager\UI\ManageForm\obj\Debug\ManageForm.RegisterForm.resources
+D:\Study\HK2 25-26\He_QTCSDL\Project\PetCareManager\UI\ManageForm\obj\Debug\ManageForm.SystemInfoForm.resources
+D:\Study\HK2 25-26\He_QTCSDL\Project\PetCareManager\UI\ManageForm\obj\Debug\ManageForm.VaccineForm.resources
+D:\Study\HK2 25-26\He_QTCSDL\Project\PetCareManager\UI\ManageForm\obj\Debug\ManageForm.csproj.GenerateResource.cache
+D:\Study\HK2 25-26\He_QTCSDL\Project\PetCareManager\UI\ManageForm\obj\Debug\ManageForm.csproj.CoreCompileInputs.cache
+D:\Study\HK2 25-26\He_QTCSDL\Project\PetCareManager\UI\ManageForm\bin\Debug\ManageForm.exe.config
+D:\Study\HK2 25-26\He_QTCSDL\Project\PetCareManager\UI\ManageForm\bin\Debug\ManageForm.exe
+D:\Study\HK2 25-26\He_QTCSDL\Project\PetCareManager\UI\ManageForm\bin\Debug\ManageForm.pdb
+D:\Study\HK2 25-26\He_QTCSDL\Project\PetCareManager\UI\ManageForm\obj\Debug\ManageForm.exe
+D:\Study\HK2 25-26\He_QTCSDL\Project\PetCareManager\UI\ManageForm\obj\Debug\ManageForm.pdb
