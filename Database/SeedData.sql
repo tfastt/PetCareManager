@@ -3,7 +3,9 @@ INSERT INTO [User] (UserName, Phone, Address, Email, PasswordHash, Role, Note)
 VALUES
 (N'Nguyễn Văn An', '0901234567', N'Hà Nội', 'an@example.com', 'hash1', 'Owner', N'User demo'),
 (N'Trần Bình', '0902345678', N'HCM', 'binh@example.com', 'hash2', 'Owner', N'User demo'),
-(N'Admin', '0900000000', N'Hà Nội', 'admin@example.com', 'adminhash', 'Admin', N'Admin system');
+(N'Admin', '0900000000', N'Hà Nội', 'admin@example.com', 'adminhash', 'Admin', N'Admin system'),
+('Admin', '', '', 'admin@petcare.vn', 'admin123', 'Admin', ''),
+('Owner', '', '', 'owner@petcare.vn', 'owner123', 'Owner', '');
 
 -- TEST
 SELECT * FROM [User];
