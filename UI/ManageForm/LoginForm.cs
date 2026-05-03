@@ -12,44 +12,48 @@ namespace ManageForm
 {
     public partial class LoginForm : Form
     {
+        private IAuthService _authService;
         public LoginForm()
         {
             InitializeComponent();
+            _authService = new AuthService(new UserRepository());
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string email = txtEmail.Text.Trim();
-            string password = txtPassword.Text.Trim();
+    string password = txtPassword.Text.Trim();
 
-            if (email == "" || password == "")
-            {
-                MessageBox.Show("Vui lòng nhập email và mật khẩu!", "Thông báo");
-                return;
-            }
+    if (email == "" || password == "")
+    {
+        MessageBox.Show("Vui lòng nhập email và mật khẩu!", "Thông báo");
+        return;
+    }
 
-            // Tài khoản Admin
-            if (email == "admin@petcare.vn" && password == "admin123")
-            {
-                AdminForm adminForm = new AdminForm("Admin");
-                adminForm.FormClosed += (s, ev) => this.Show();
-                adminForm.Show();
-                this.Hide();
-            }
-            // Tài khoản Owner
-            else if (email == "owner@petcare.vn" && password == "owner123")
-            {
-                OwnerForm ownerForm = new OwnerForm("Nguyễn Thuận", "owner");
-                ownerForm.FormClosed += (s, ev) => this.Show();
-                ownerForm.Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Email hoặc mật khẩu không đúng!", "Lỗi");
-            }
+    try
+    {
+        var user = _authService.Login(email, password);
+
+        if (user.Role == "Admin")
+        {
+            AdminForm adminForm = new AdminForm(user.UserName);
+            adminForm.FormClosed += (s, ev) => this.Show();
+            adminForm.Show();
+            this.Hide();
         }
-
+        else
+        {
+            OwnerForm ownerForm = new OwnerForm(user.UserName, "owner");
+            ownerForm.FormClosed += (s, ev) => this.Show();
+            ownerForm.Show();
+            this.Hide();
+        }
+    }
+    catch (Exception ex)
+    {
+        MessageBox.Show(ex.Message, "Lỗi");
+    }
+}
         private void btnRegister_Click(object sender, EventArgs e)
         {
             RegisterForm registerForm = new RegisterForm();
