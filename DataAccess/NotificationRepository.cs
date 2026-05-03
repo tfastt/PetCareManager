@@ -6,7 +6,7 @@ using PetCareManager.Model;
 
 namespace PetCareManager.DataAccess
 {
-    public class NotificationService
+    public class NotificationRepository
     {
         private string connectionString =
             "Server=localhost\\SQLEXPRESS;Database=PetCareManagement;Trusted_Connection=True;";
