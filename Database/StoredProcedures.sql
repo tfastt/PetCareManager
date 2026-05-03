@@ -749,5 +749,12 @@ BEGIN
         OR p.Breed LIKE N'%' + @Keyword + N'%';
 END;
 GO
-
+CREATE OR ALTER PROCEDURE sp_GetUserByEmail
+    @Email NVARCHAR(100)
+AS
+BEGIN
+    SELECT *
+    FROM [User]
+    WHERE Email = @Email;
+END;
 
