@@ -135,7 +135,7 @@ namespace PetCareManager.DataAccess
 
             return user;
         }
-            public User GetUserByEmail(string email)
+public User GetUserByEmail(string email)
 {
     User user = null;
 
