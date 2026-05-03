@@ -7,18 +7,18 @@ namespace PetCareManager.Services.Implementations
     {
         private List<User> _users = new List<User>();
 
-        public User Login(string username, string password)
-        {
-            var user = _users.FirstOrDefault(u => u.UserName == username);
+public User Login(string email, string password)
+{
+    var user = _userRepository.GetUserByEmail(email);
 
-            if (user == null)
-                throw new Exception("User not found");
+    if (user == null)
+        throw new Exception("User not found");
 
-            if (user.PasswordHash != password)
-                throw new Exception("Wrong password");
+    if (user.PasswordHash != password) // demo trước, chưa hash
+        throw new Exception("Wrong password");
 
-            return user;
-        }
+    return user;
+}
 
         public User Register(string username, string password)
         {
