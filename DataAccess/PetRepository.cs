@@ -6,7 +6,7 @@ using PetCareManager.Model;
 
 namespace PetCareManager.DataAccess
 {
-    public class PetService
+    public class PetRepository
     {
         private string connectionString =
             "Server=localhost\\SQLEXPRESS;Database=PetCareManagement;Trusted_Connection=True;";
