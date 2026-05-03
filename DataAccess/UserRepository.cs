@@ -32,7 +32,7 @@ namespace PetCareManager.DataAccess
                         Phone = reader["Phone"].ToString(),
                         Address = reader["Address"].ToString(),
                         Email = reader["Email"].ToString(),
-                        PasswordHash = "",
+                        PasswordHash = reader["PasswordHash"].ToString(),
                         Role = reader["Role"].ToString(),
                         CreatedDate = (DateTime)reader["CreatedDate"],
                         Note = reader["Note"].ToString()
@@ -125,7 +125,7 @@ namespace PetCareManager.DataAccess
                         Phone = reader["Phone"].ToString(),
                         Address = reader["Address"].ToString(),
                         Email = reader["Email"].ToString(),
-                        PasswordHash = "",
+                        PasswordHash = reader["PasswordHash"].ToString(),
                         Role = reader["Role"].ToString(),
                         CreatedDate = (DateTime)reader["CreatedDate"],
                         Note = reader["Note"].ToString()
@@ -135,5 +135,38 @@ namespace PetCareManager.DataAccess
 
             return user;
         }
+            public User GetUserByEmail(string email)
+{
+    User user = null;
+
+    using (SqlConnection conn = new SqlConnection(connectionString))
+    {
+        SqlCommand cmd = new SqlCommand("sp_GetUserByEmail", conn);
+        cmd.CommandType = CommandType.StoredProcedure;
+
+        cmd.Parameters.AddWithValue("@Email", email);
+
+        conn.Open();
+        SqlDataReader reader = cmd.ExecuteReader();
+
+        if (reader.Read())
+        {
+            user = new User()
+            {
+                UserID = (int)reader["UserID"],
+                UserName = reader["UserName"].ToString(),
+                Phone = reader["Phone"].ToString(),
+                Address = reader["Address"].ToString(),
+                Email = reader["Email"].ToString(),
+                PasswordHash = reader["PasswordHash"].ToString(),
+                Role = reader["Role"].ToString(),
+                CreatedDate = (DateTime)reader["CreatedDate"],
+                Note = reader["Note"].ToString()
+            };
+        }
+    }
+
+    return user;
+}
     }
 }
