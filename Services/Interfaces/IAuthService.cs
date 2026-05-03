@@ -1,4 +1,4 @@
-using PetCareManager.Models;
+using PetCareManager.Model;
 
 namespace PetCareManager.Services.Interfaces
 {
