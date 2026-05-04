@@ -90,14 +90,14 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(17, 110);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(771, 136);
+            this.groupBox1.Size = new System.Drawing.Size(771, 151);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin Owner";
             // 
             // btnManagePro
             // 
-            this.btnManagePro.Location = new System.Drawing.Point(426, 85);
+            this.btnManagePro.Location = new System.Drawing.Point(426, 101);
             this.btnManagePro.Name = "btnManagePro";
             this.btnManagePro.Size = new System.Drawing.Size(126, 44);
             this.btnManagePro.TabIndex = 12;
@@ -107,7 +107,7 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(321, 85);
+            this.btnSearch.Location = new System.Drawing.Point(321, 101);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(99, 44);
             this.btnSearch.TabIndex = 11;
@@ -116,7 +116,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(216, 85);
+            this.btnDelete.Location = new System.Drawing.Point(216, 101);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(99, 44);
             this.btnDelete.TabIndex = 10;
@@ -125,7 +125,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(111, 85);
+            this.btnUpdate.Location = new System.Drawing.Point(111, 101);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(99, 44);
             this.btnUpdate.TabIndex = 9;
@@ -134,7 +134,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(6, 85);
+            this.btnAdd.Location = new System.Drawing.Point(6, 101);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(99, 44);
             this.btnAdd.TabIndex = 8;
@@ -234,11 +234,11 @@
             // dgvOwners
             // 
             this.dgvOwners.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvOwners.Location = new System.Drawing.Point(17, 253);
+            this.dgvOwners.Location = new System.Drawing.Point(17, 267);
             this.dgvOwners.Name = "dgvOwners";
             this.dgvOwners.RowHeadersWidth = 51;
             this.dgvOwners.RowTemplate.Height = 24;
-            this.dgvOwners.Size = new System.Drawing.Size(771, 185);
+            this.dgvOwners.Size = new System.Drawing.Size(771, 171);
             this.dgvOwners.TabIndex = 6;
             // 
             // AdminForm

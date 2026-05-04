@@ -19,10 +19,10 @@ namespace ManageForm
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            string fullName = txtFullName.Text.Trim();
-            string email = txtEmail.Text.Trim();
-            string password = txtPassword.Text.Trim();
-            string confirmPassword = txtConfirmPassword.Text.Trim();
+            string fullName = textBox1.Text.Trim();         // textBox1 = Họ Và Tên
+            string email = txtEmail.Text.Trim();             // txtEmail = Email
+            string password = textBox2.Text.Trim();          // textBox2 = Password
+            string confirmPassword = txtConfirmPassword.Text.Trim(); // txtConfirmPassword = Confirm
 
             if (fullName == "" || email == "" || password == "" || confirmPassword == "")
             {
@@ -72,6 +72,16 @@ namespace ManageForm
                 }
             }
             this.Close();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtConfirmPassword_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
