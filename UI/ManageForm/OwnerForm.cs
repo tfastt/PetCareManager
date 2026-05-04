@@ -162,5 +162,11 @@ namespace ManageForm
                 this.Close();
             }
         }
+
+        private void btnNotification_Click(object sender, EventArgs e)
+        {
+            NotificationForm notifForm = new NotificationForm();
+            notifForm.Show();
+        }
     }
 }

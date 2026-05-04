@@ -262,6 +262,7 @@
             this.btnSendNotification.TabIndex = 13;
             this.btnSendNotification.Text = "Gửi Thông Báo";
             this.btnSendNotification.UseVisualStyleBackColor = true;
+            this.btnSendNotification.Click += new System.EventHandler(this.btnSendNotification_Click_1);
             // 
             // AdminForm
             // 

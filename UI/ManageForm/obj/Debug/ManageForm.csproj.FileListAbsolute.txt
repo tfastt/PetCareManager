@@ -43,3 +43,4 @@ C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.VaccineForm.resourc
 C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.AdminForm.resources
 C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.OwnerForm.resources
 C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.ManageProForm.resources
+C:\Users\PHONG\ManageForm\UI\ManageForm\obj\Debug\ManageForm.NotificationForm.resources

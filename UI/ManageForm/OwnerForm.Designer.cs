@@ -33,6 +33,7 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnSysInfo = new System.Windows.Forms.Button();
             this.pnlPets = new System.Windows.Forms.Panel();
+            this.btnNotification = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,6 +48,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnNotification);
             this.panel1.Controls.Add(this.btnLogout);
             this.panel1.Controls.Add(this.btnSysInfo);
             this.panel1.Controls.Add(this.lblTitle);
@@ -73,6 +75,7 @@
             this.btnSysInfo.TabIndex = 1;
             this.btnSysInfo.Text = "Xem System Info";
             this.btnSysInfo.UseVisualStyleBackColor = true;
+            this.btnSysInfo.Click += new System.EventHandler(this.btnSysInfo_Click);
             // 
             // pnlPets
             // 
@@ -80,6 +83,16 @@
             this.pnlPets.Name = "pnlPets";
             this.pnlPets.Size = new System.Drawing.Size(775, 368);
             this.pnlPets.TabIndex = 2;
+            // 
+            // btnNotification
+            // 
+            this.btnNotification.Location = new System.Drawing.Point(540, 9);
+            this.btnNotification.Name = "btnNotification";
+            this.btnNotification.Size = new System.Drawing.Size(96, 33);
+            this.btnNotification.TabIndex = 3;
+            this.btnNotification.Text = "Thông báo";
+            this.btnNotification.UseVisualStyleBackColor = true;
+            this.btnNotification.Click += new System.EventHandler(this.btnNotification_Click);
             // 
             // OwnerForm
             // 
@@ -104,5 +117,6 @@
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnSysInfo;
         private System.Windows.Forms.Panel pnlPets;
+        private System.Windows.Forms.Button btnNotification;
     }
 }

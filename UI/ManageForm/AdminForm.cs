@@ -210,5 +210,34 @@ namespace ManageForm
         {
 
         }
+
+        private void btnSendNotification_Click_1(object sender, EventArgs e)
+        {
+            if (dgvOwners.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn owner!", "Thông báo");
+                return;
+            }
+
+            string ownerName = dgvOwners.SelectedRows[0].Cells["OwnerName"].Value.ToString();
+
+            // Mở form nhập nội dung thông báo
+            string message = Microsoft.VisualBasic.Interaction.InputBox(
+                "Nhập nội dung thông báo:", "Gửi thông báo tới " + ownerName, "");
+
+            if (!string.IsNullOrEmpty(message))
+            {
+                NotificationForm.Notifications.Add(new NotificationItem
+                {
+                    Title = "Thông báo từ Admin",
+                    Description = message,
+                    Time = DateTime.Now.ToString("dd/MM/yyyy HH:mm"),
+                    Type = "admin",
+                    IsRead = false
+                });
+
+                MessageBox.Show($"Đã gửi thông báo tới {ownerName}!", "Thành công");
+            }
+        }
     }
 }
