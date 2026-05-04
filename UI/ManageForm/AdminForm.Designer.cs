@@ -47,6 +47,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
             this.dgvOwners = new System.Windows.Forms.DataGridView();
+            this.btnViewDetail = new System.Windows.Forms.Button();
+            this.btnSendNotification = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOwners)).BeginInit();
@@ -88,16 +90,16 @@
             this.groupBox1.Controls.Add(this.txtOwnerID);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(17, 110);
+            this.groupBox1.Location = new System.Drawing.Point(17, 78);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(771, 151);
+            this.groupBox1.Size = new System.Drawing.Size(771, 141);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin Owner";
             // 
             // btnManagePro
             // 
-            this.btnManagePro.Location = new System.Drawing.Point(426, 101);
+            this.btnManagePro.Location = new System.Drawing.Point(426, 91);
             this.btnManagePro.Name = "btnManagePro";
             this.btnManagePro.Size = new System.Drawing.Size(126, 44);
             this.btnManagePro.TabIndex = 12;
@@ -107,7 +109,7 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(321, 101);
+            this.btnSearch.Location = new System.Drawing.Point(321, 91);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(99, 44);
             this.btnSearch.TabIndex = 11;
@@ -116,7 +118,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(216, 101);
+            this.btnDelete.Location = new System.Drawing.Point(216, 91);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(99, 44);
             this.btnDelete.TabIndex = 10;
@@ -125,7 +127,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(111, 101);
+            this.btnUpdate.Location = new System.Drawing.Point(111, 91);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(99, 44);
             this.btnUpdate.TabIndex = 9;
@@ -134,7 +136,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(6, 101);
+            this.btnAdd.Location = new System.Drawing.Point(6, 91);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(99, 44);
             this.btnAdd.TabIndex = 8;
@@ -143,7 +145,7 @@
             // 
             // txtOwnerPhone
             // 
-            this.txtOwnerPhone.Location = new System.Drawing.Point(605, 52);
+            this.txtOwnerPhone.Location = new System.Drawing.Point(605, 48);
             this.txtOwnerPhone.Name = "txtOwnerPhone";
             this.txtOwnerPhone.Size = new System.Drawing.Size(160, 27);
             this.txtOwnerPhone.TabIndex = 7;
@@ -152,7 +154,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(601, 27);
+            this.label6.Location = new System.Drawing.Point(601, 23);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(115, 22);
             this.label6.TabIndex = 6;
@@ -160,7 +162,7 @@
             // 
             // txtOwnerEmail
             // 
-            this.txtOwnerEmail.Location = new System.Drawing.Point(397, 52);
+            this.txtOwnerEmail.Location = new System.Drawing.Point(397, 48);
             this.txtOwnerEmail.Name = "txtOwnerEmail";
             this.txtOwnerEmail.Size = new System.Drawing.Size(160, 27);
             this.txtOwnerEmail.TabIndex = 5;
@@ -169,7 +171,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(393, 27);
+            this.label5.Location = new System.Drawing.Point(393, 23);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(54, 22);
             this.label5.TabIndex = 4;
@@ -177,7 +179,7 @@
             // 
             // txtOwnerName
             // 
-            this.txtOwnerName.Location = new System.Drawing.Point(201, 52);
+            this.txtOwnerName.Location = new System.Drawing.Point(201, 48);
             this.txtOwnerName.Name = "txtOwnerName";
             this.txtOwnerName.Size = new System.Drawing.Size(160, 27);
             this.txtOwnerName.TabIndex = 3;
@@ -186,7 +188,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(197, 27);
+            this.label4.Location = new System.Drawing.Point(197, 23);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 22);
             this.label4.TabIndex = 2;
@@ -194,7 +196,7 @@
             // 
             // txtOwnerID
             // 
-            this.txtOwnerID.Location = new System.Drawing.Point(11, 52);
+            this.txtOwnerID.Location = new System.Drawing.Point(10, 48);
             this.txtOwnerID.Name = "txtOwnerID";
             this.txtOwnerID.Size = new System.Drawing.Size(160, 27);
             this.txtOwnerID.TabIndex = 1;
@@ -204,7 +206,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(7, 27);
+            this.label3.Location = new System.Drawing.Point(6, 23);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 22);
             this.label3.TabIndex = 0;
@@ -215,7 +217,7 @@
             this.panel1.Controls.Add(this.btnLogout);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lblAdminName);
-            this.panel1.Location = new System.Drawing.Point(13, 44);
+            this.panel1.Location = new System.Drawing.Point(17, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(775, 60);
             this.panel1.TabIndex = 5;
@@ -240,12 +242,34 @@
             this.dgvOwners.RowTemplate.Height = 24;
             this.dgvOwners.Size = new System.Drawing.Size(771, 171);
             this.dgvOwners.TabIndex = 6;
+            this.dgvOwners.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvOwners_CellClick);
+            // 
+            // btnViewDetail
+            // 
+            this.btnViewDetail.Location = new System.Drawing.Point(562, 219);
+            this.btnViewDetail.Name = "btnViewDetail";
+            this.btnViewDetail.Size = new System.Drawing.Size(99, 44);
+            this.btnViewDetail.TabIndex = 9;
+            this.btnViewDetail.Text = "Xem chi tiết";
+            this.btnViewDetail.UseVisualStyleBackColor = true;
+            this.btnViewDetail.Click += new System.EventHandler(this.btnViewDetail_Click_1);
+            // 
+            // btnSendNotification
+            // 
+            this.btnSendNotification.Location = new System.Drawing.Point(667, 219);
+            this.btnSendNotification.Name = "btnSendNotification";
+            this.btnSendNotification.Size = new System.Drawing.Size(115, 44);
+            this.btnSendNotification.TabIndex = 13;
+            this.btnSendNotification.Text = "Gửi Thông Báo";
+            this.btnSendNotification.UseVisualStyleBackColor = true;
             // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSendNotification);
+            this.Controls.Add(this.btnViewDetail);
             this.Controls.Add(this.dgvOwners);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
@@ -282,5 +306,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.DataGridView dgvOwners;
+        private System.Windows.Forms.Button btnViewDetail;
+        private System.Windows.Forms.Button btnSendNotification;
     }
 }

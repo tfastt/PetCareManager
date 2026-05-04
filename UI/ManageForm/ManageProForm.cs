@@ -30,16 +30,16 @@ namespace ManageForm
             dgvPets.Columns.Clear();
             dgvPets.Rows.Clear();
 
-            dgvPets.Columns.Add("PetID", "ID");
-            dgvPets.Columns.Add("PetName", "Tên");
-            dgvPets.Columns.Add("Species", "Loài");
-            dgvPets.Columns.Add("Breed", "Giống");
-            dgvPets.Columns.Add("Age", "Tuổi");
-            dgvPets.Columns.Add("OwnerName", "Chủ nuôi");
-            dgvPets.Columns.Add("Note", "Ghi chú");
+            dgvPets.Columns.Add("SpeciesID", "ID");
+            dgvPets.Columns.Add("SpeciesName", "Tên loài");
+            dgvPets.Columns.Add("Description", "Mô tả");
 
-            dgvPets.Rows.Add("1", "Mimi", "Cat", "British Shorthair", "2", "Thuận", "Healthy");
-            dgvPets.Rows.Add("2", "Lucky", "Dog", "Poodle", "3", "An", "Needs grooming");
+            // Danh mục loài pet của hệ thống
+            dgvPets.Rows.Add("1", "Cat", "Mèo");
+            dgvPets.Rows.Add("2", "Dog", "Chó");
+            dgvPets.Rows.Add("3", "Rabbit", "Thỏ");
+            dgvPets.Rows.Add("4", "Bird", "Chim");
+            dgvPets.Rows.Add("5", "Fish", "Cá");
         }
 
         private void btnAddPet_Click(object sender, EventArgs e)
@@ -174,14 +174,17 @@ namespace ManageForm
             dgvVaccines.Columns.Clear();
             dgvVaccines.Rows.Clear();
 
-            dgvVaccines.Columns.Add("PetID", "Pet ID");
-            dgvVaccines.Columns.Add("VaccineName", "Vaccine");
-            dgvVaccines.Columns.Add("InjectionDate", "Ngày tiêm");
-            dgvVaccines.Columns.Add("NextInjectionDate", "Tiêm tiếp");
-            dgvVaccines.Columns.Add("Note", "Ghi chú");
+            dgvVaccines.Columns.Add("VaccineID", "ID");
+            dgvVaccines.Columns.Add("VaccineName", "Tên vaccine");
+            dgvVaccines.Columns.Add("ForSpecies", "Dành cho");
+            dgvVaccines.Columns.Add("Description", "Mô tả");
 
-            dgvVaccines.Rows.Add("1", "Rabies", "01/01/2025", "01/01/2026", "Xong");
-            dgvVaccines.Rows.Add("2", "DA2PP", "10/02/2025", "10/02/2026", "Bình thường");
+            // Danh mục vaccine của hệ thống
+            dgvVaccines.Rows.Add("1", "Rabies", "Cat, Dog", "Vaccine phòng dại");
+            dgvVaccines.Rows.Add("2", "FVRCP", "Cat", "Vaccine tổng hợp mèo");
+            dgvVaccines.Rows.Add("3", "DA2PP", "Dog", "Vaccine tổng hợp chó");
+            dgvVaccines.Rows.Add("4", "Bordetella", "Dog", "Vaccine viêm phế quản");
+            dgvVaccines.Rows.Add("5", "RHDV", "Rabbit", "Vaccine xuất huyết thỏ");
         }
 
         private void btnAddVac_Click(object sender, EventArgs e)

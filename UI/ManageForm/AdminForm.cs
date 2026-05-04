@@ -23,6 +23,8 @@ namespace ManageForm
         private void AdminForm_Load(object sender, EventArgs e)
         {
             lblAdminName.Text = _adminName;
+            btnViewDetail.Visible = false;
+            btnSendNotification.Visible = false;
             LoadOwnerGrid();
         }
 
@@ -41,6 +43,21 @@ namespace ManageForm
             dgvOwners.Rows.Add("1", "Tran Van A", "tranvana@mail.com", "0901234567", "3", "Owner");
             dgvOwners.Rows.Add("2", "Nguyen Van B", "nguyenvanb@mail.com", "0912345678", "1", "Owner");
             dgvOwners.Rows.Add("3", "Le Van C", "levanc@mail.com", "0923456789", "2", "Admin");
+        }
+
+        private void dgvOwners_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgvOwners.Rows[e.RowIndex];
+                txtOwnerID.Text = row.Cells["OwnerID"].Value?.ToString();
+                txtOwnerName.Text = row.Cells["OwnerName"].Value?.ToString();
+                txtOwnerEmail.Text = row.Cells["Email"].Value?.ToString();
+                txtOwnerPhone.Text = row.Cells["Phone"].Value?.ToString();
+
+                btnViewDetail.Visible = true;
+                btnSendNotification.Visible = true;
+            }
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -129,7 +146,6 @@ namespace ManageForm
                 {
                     row.Selected = true;
                     dgvOwners.FirstDisplayedScrollingRowIndex = row.Index;
-
                     txtOwnerID.Text = row.Cells["OwnerID"].Value.ToString();
                     txtOwnerName.Text = row.Cells["OwnerName"].Value.ToString();
                     txtOwnerEmail.Text = row.Cells["Email"].Value.ToString();
@@ -141,25 +157,36 @@ namespace ManageForm
             MessageBox.Show("Không tìm thấy owner!", "Thông báo");
         }
 
-        private void dgvOwners_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = dgvOwners.Rows[e.RowIndex];
-                txtOwnerID.Text = row.Cells["OwnerID"].Value?.ToString();
-                txtOwnerName.Text = row.Cells["OwnerName"].Value?.ToString();
-                txtOwnerEmail.Text = row.Cells["Email"].Value?.ToString();
-                txtOwnerPhone.Text = row.Cells["Phone"].Value?.ToString();
-            }
-        }
-
-        private void btnManagePro_Click(object sender, EventArgs e)
+        private void btnManagePro_Click_1(object sender, EventArgs e)
         {
             ManageProForm manageProForm = new ManageProForm();
             manageProForm.Show();
         }
 
-        private void btnLogout_Click(object sender, EventArgs e)
+        private void btnViewDetail_Click_1(object sender, EventArgs e)
+        {
+            if (dgvOwners.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn owner!", "Thông báo");
+                return;
+            }
+            string ownerName = dgvOwners.SelectedRows[0].Cells["OwnerName"].Value.ToString();
+            OwnerForm ownerForm = new OwnerForm(ownerName, "admin");
+            ownerForm.Show();
+        }
+
+        private void btnSendNotification_Click(object sender, EventArgs e)
+        {
+            if (dgvOwners.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn owner!", "Thông báo");
+                return;
+            }
+            string ownerName = dgvOwners.SelectedRows[0].Cells["OwnerName"].Value.ToString();
+            MessageBox.Show($"Gửi thông báo tới {ownerName}", "Thông báo");
+        }
+
+        private void btnLogout_Click_1(object sender, EventArgs e)
         {
             DialogResult confirm = MessageBox.Show(
                 "Bạn có chắc muốn đăng xuất?", "Xác nhận",
@@ -167,8 +194,6 @@ namespace ManageForm
 
             if (confirm == DialogResult.Yes)
             {
-                LoginForm loginForm = new LoginForm();
-                loginForm.Show();
                 this.Close();
             }
         }
@@ -181,27 +206,9 @@ namespace ManageForm
             txtOwnerPhone.Clear();
         }
 
-        private void btnLogout_Click_1(object sender, EventArgs e)
-        {
-            DialogResult confirm = MessageBox.Show(
-        "Bạn có chắc muốn đăng xuất?", "Xác nhận",
-        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (confirm == DialogResult.Yes)
-            {
-                this.Close();
-            }
-        }
-
         private void txtOwnerID_TextChanged(object sender, EventArgs e)
         {
 
-        }
-
-        private void btnManagePro_Click_1(object sender, EventArgs e)
-        {
-            ManageProForm manageProForm = new ManageProForm();
-            manageProForm.Show();
         }
     }
 }
